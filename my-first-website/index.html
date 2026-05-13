@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bruce Studio｜網站架設與 AI 工作流程輔助</title>
+
+  <meta name="description" content="Bruce Studio 提供一頁式網站架設、資料整理、文案校對與 AI 工作流程輔助服務，適合個人品牌、小型商家與接案者。">
+
+  <meta property="og:title" content="Bruce Studio｜網站架設與 AI 工作流程輔助">
+  <meta property="og:description" content="提供一頁式網站架設、資料整理、文案校對與 AI 工具輔助服務。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sage-frangollo-83a7bd.netlify.app/">
+  <meta property="og:image" content="https://sage-frangollo-83a7bd.netlify.app/images/portfolio-1.jpg">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 導覽列 -->
+  <nav>
+    <div class="logo">Bruce Studio</div>
+    <ul>
+      <li onclick="scrollToSection('about')">關於我</li>
+      <li onclick="scrollToSection('services')">服務項目</li>
+      <li onclick="scrollToSection('portfolio')">作品集</li>
+      <li onclick="scrollToSection('pricing')">價格</li>
+      <li onclick="scrollToSection('contact')">聯絡我</li>
+    </ul>
+  </nav>
+
+  <!-- 首頁大標題 -->
+  <header class="hero">
+    <h1>Bruce Fixer Studio</h1>
+    <p>網站架設｜資料整理｜文案校對｜AI 輔助工作流程</p>
+    <button class="btn" onclick="scrollToSection('contact')">立即聯絡</button>
+  </header>
+
+  <!-- 關於我 -->
+  <section id="about">
+    <h2>關於我</h2>
+
+    <div class="about">
+      <div class="photo-box">
+<img src="images/profile.jpg" alt="Bruce 的照片">
+      </div>
+
+      <div>
+        <p>
+          我提供簡單網站架設、資料整理、文案校對與 AI 工具輔助服務。
+          服務對象包含個人品牌、小型商家、接案者與剛起步的團隊。
+        </p>
+
+        <p>
+          我擅長把複雜需求整理成清楚流程，協助客戶建立基本網頁、
+          服務介紹頁、作品集頁面與簡單的線上表單。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 服務項目 -->
+  <section id="services">
+    <h2>服務項目</h2>
+
+    <div class="services">
+      <div class="card">
+        <h3>網站架設</h3>
+        <p>製作個人頁面、形象網站、服務介紹頁。</p>
+      </div>
+
+      <div class="card">
+        <h3>資料整理</h3>
+        <p>協助整理 Excel、Google Sheet、文字資料。</p>
+      </div>
+
+      <div class="card">
+        <h3>文案校對</h3>
+        <p>協助中文、英文文案潤飾與格式整理。</p>
+      </div>
+    </div>
+  </section>
+<!-- 作品集 -->
+<section id="portfolio">
+  <h2>作品集</h2>
+
+  <div class="portfolio">
+    <div class="portfolio-card">
+      <img src="images/portfolio-1.jpg" alt="個人接案服務網站截圖">
+
+      <div class="portfolio-content">
+       <h3>個人接案服務網站 Demo</h3>
+       <p>
+         自主練習作品，用於展示一頁式網站架構、響應式排版與表單介面。
+       </p>
+        <p class="tech">HTML / CSS / JavaScript / Netlify</p>
+
+        <a 
+          href="https://sage-frangollo-83a7bd.netlify.app/" 
+          target="_blank" 
+          class="portfolio-button"
+        >
+          前往查看
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 服務價格 -->
+<section id="pricing">
+  <h2>服務價格</h2>
+
+  <div class="pricing">
+    <div class="price-card">
+      <h3>基礎版</h3>
+      <p class="price">NT$ 1,500 起</p>
+      <p>適合簡單個人頁、接案介紹頁。</p>
+      <ul>
+        <li>一頁式網站</li>
+        <li>基本排版</li>
+        <li>手機版支援</li>
+      </ul>
+    </div>
+
+    <div class="price-card highlight">
+      <h3>標準版</h3>
+      <p class="price">NT$ 3,000 起</p>
+      <p>適合小型商家、服務介紹頁。</p>
+      <ul>
+        <li>多區塊首頁</li>
+        <li>圖片與按鈕設計</li>
+        <li>聯絡表單版面</li>
+      </ul>
+    </div>
+
+    <div class="price-card">
+      <h3>進階版</h3>
+      <p class="price">NT$ 5,000 起</p>
+      <p>適合需要較完整內容規劃的網站。</p>
+      <ul>
+        <li>完整內容架構</li>
+        <li>客製化區塊</li>
+        <li>基本 SEO 結構</li>
+      </ul>
+    </div>
+實際價格會依頁面數量、圖片素材、修改次數與功能需求調整。
+  </div>
+</section>
+
+  <!-- 聯絡表單 -->
+  <section id="contact">
+    <h2>聯絡我</h2>
+  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+  <input type="hidden" name="form-name" value="contact">
+
+  <p class="hidden">
+    <label>
+      不要填這個欄位：
+      <input name="bot-field">
+    </label>
+  </p>
+
+  <input type="text" name="name" id="name" placeholder="請輸入你的名字" required>
+  <input type="email" name="email" id="email" placeholder="請輸入你的 Email" required>
+  <textarea name="content" id="content" placeholder="請簡單描述你的需求" required></textarea>
+
+  <button type="submit" class="btn btn-dark">送出表單</button>
+</form>
+<p>也可以直接透過以下方式聯絡我：</p>
+<p>Email：brucefixerstudio@gmail.com</p>
+<p>LINE：@176byind</p>
+
+    <div id="formMessage" class="message"></div>
+  </section>
+
+  <footer>
+    <p>© 2026 Bruce Studio. All rights reserved.</p>
+  </footer>
+<script src="script.js"></script>
+ </body>
+</html>
