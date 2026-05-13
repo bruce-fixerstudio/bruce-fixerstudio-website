@@ -152,40 +152,6 @@
       margin-top: 0;
     }
 
-    /* ===== 表單 ===== */
-    form {
-      display: grid;
-      gap: 15px;
-    }
-
-    input,
-    textarea {
-      width: 100%;
-      padding: 12px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-sizing: border-box;
-    }
-
-    textarea {
-      min-height: 120px;
-      resize: vertical;
-    }
-.hidden {
-  display: none;
-}
-    .message {
-      margin-top: 15px;
-      font-weight: bold;
-      color: green;
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px;
-      color: #666;
-    }
 /* ===== 作品集 ===== */
 .portfolio {
   display: grid;
@@ -283,6 +249,74 @@
 
 .price-card ul {
   padding-left: 20px;
+}
+
+/* ===== 常見問題 ===== */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.faq-item:hover {
+  transform: translateY(-3px);
+  background-color: #e6e6e6;
+}
+
+.faq-item h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #111;
+  font-size: 18px;
+}
+
+.faq-item p {
+  margin: 0;
+  color: #444;
+}
+
+/* ===== 表單 ===== */
+form {
+  display: grid;
+  gap: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.hidden {
+  display: none;
+}
+
+.message {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #666;
 }
 
     /* ===== 手機版排版 ===== */
