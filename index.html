@@ -14,6 +14,11 @@
   <meta property="og:url" content="https://sage-frangollo-83a7bd.netlify.app/">
   <meta property="og:image" content="https://sage-frangollo-83a7bd.netlify.app/images/portfolio-1.jpg">
 
+  <!-- SEO 優化標籤 -->
+  <meta name="keywords" content="網站架設, 一頁式網站, 資料整理, 文案校對, AI工作流程, Bruce Studio, 接案者網站">
+  <meta name="author" content="Bruce Studio">
+  <link rel="canonical" href="https://sage-frangollo-83a7bd.netlify.app/">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,12 +27,12 @@
   <nav>
     <div class="logo">Bruce Studio</div>
     <ul>
-      <li onclick="scrollToSection('about')">關於我</li>
-      <li onclick="scrollToSection('services')">服務項目</li>
-      <li onclick="scrollToSection('portfolio')">作品集</li>
-      <li onclick="scrollToSection('pricing')">價格</li>
-      <li onclick="scrollToSection('faq')">常見問題</li>
-      <li onclick="scrollToSection('contact')">聯絡我</li>
+      <li><a href="#about">關於我</a></li>
+      <li><a href="#services">服務項目</a></li>
+      <li><a href="#portfolio">作品集</a></li>
+      <li><a href="#pricing">價格</a></li>
+      <li><a href="#faq">常見問題</a></li>
+      <li><a href="#contact">聯絡我</a></li>
     </ul>
   </nav>
 
@@ -35,8 +40,10 @@
   <header class="hero">
     <h1>Bruce Fixer Studio</h1>
     <p>網站架設｜資料整理｜文案校對｜AI 輔助工作流程</p>
-    <button class="btn" onclick="scrollToSection('contact')">立即聯絡</button>
+    <a href="#contact" class="btn" style="display: inline-block;">立即聯絡</a>
   </header>
+
+  <main>
 
   <!-- 關於我 -->
   <section id="about">
@@ -82,6 +89,19 @@
       </div>
     </div>
   </section>
+
+  <!-- 技術工具箱 -->
+  <section id="tech-stack">
+    <h2>技術工具箱</h2>
+    <div class="tech-icons" style="display: flex; justify-content: center; gap: 20px; font-size: 0.9rem;">
+      <span>#HTML5</span>
+      <span>#CSS3</span>
+      <span>#JavaScript</span>
+      <span>#ChatGPT_API</span>
+      <span>#Automation</span>
+    </div>
+  </section>
+
 <!-- 作品集 -->
 <section id="portfolio">
   <h2>作品集</h2>
@@ -145,7 +165,7 @@
         <li>基本 SEO 結構</li>
       </ul>
     </div>
-實際價格會依頁面數量、圖片素材、修改次數與功能需求調整。
+    <p class="pricing-note">※ 實際價格會依頁面數量、圖片素材、修改次數與功能需求調整。</p>
   </div>
 </section>
 
@@ -181,9 +201,18 @@
     </label>
   </p>
 
-  <input type="text" name="name" id="name" placeholder="請輸入你的名字" required>
-  <input type="email" name="email" id="email" placeholder="請輸入你的 Email" required>
-  <textarea name="content" id="content" placeholder="請簡單描述你的需求" required></textarea>
+  <div class="form-group">
+    <label for="name">名字</label>
+    <input type="text" name="name" id="name" placeholder="請輸入你的名字" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="請輸入你的 Email" required>
+  </div>
+  <div class="form-group">
+    <label for="content">需求描述</label>
+    <textarea name="content" id="content" placeholder="請簡單描述你的需求" required></textarea>
+  </div>
 
   <button type="submit" class="btn btn-dark">送出表單</button>
 </form>
@@ -193,6 +222,7 @@
 
     <div id="formMessage" class="message"></div>
   </section>
+  </main>
 
   <footer>
     <p>© 2026 Bruce Studio. Website online.</p>
