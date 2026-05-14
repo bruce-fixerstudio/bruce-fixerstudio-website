@@ -36,192 +36,162 @@
     </ul>
   </nav>
 
-  <!-- 首頁大標題 -->
-  <header class="hero">
-    <h1>Bruce Fixer Studio</h1>
-    <p>網站架設｜資料整理｜文案校對｜AI 輔助工作流程</p>
-    <a href="#contact" class="btn" style="display: inline-block;">立即聯絡</a>
-  </header>
+  <main class="bento-container">
 
-  <main>
+    <!-- 首頁大標題 -->
+    <header id="hero" class="bento-item hero bento-col-span-2 bento-row-span-2">
+      <h1>Bruce Fixer Studio</h1>
+      <p>網站架設｜資料整理｜文案校對｜AI 輔助工作流程</p>
+      <a href="#contact" class="btn" style="display: inline-block;">立即聯絡</a>
+    </header>
 
-  <!-- 關於我 -->
-  <section id="about">
-    <h2>關於我</h2>
-
-    <div class="about">
-      <div class="photo-box">
-<img src="images/profile.jpg" alt="Bruce 的照片">
+    <!-- 關於我 -->
+    <section id="about" class="bento-item about bento-col-span-2 bento-row-span-1">
+      <h2>關於我</h2>
+      <div class="about-content">
+        <div class="photo-box">
+          <img src="images/profile.jpg" alt="Bruce 的照片">
+        </div>
+        <div>
+          <p>我提供簡單網站架設、資料整理、文案校對與 AI 工具輔助服務。服務對象包含個人品牌、小型商家、接案者與剛起步的團隊。</p>
+          <p>我擅長把複雜需求整理成清楚流程，協助客戶建立基本網頁、服務介紹頁、作品集頁面與簡單的線上表單。</p>
+        </div>
       </div>
+    </section>
 
-      <div>
-        <p>
-          我提供簡單網站架設、資料整理、文案校對與 AI 工具輔助服務。
-          服務對象包含個人品牌、小型商家、接案者與剛起步的團隊。
+    <!-- 技術工具箱 -->
+    <section id="tech-stack" class="bento-item tech-stack bento-col-span-2 bento-row-span-1">
+      <h2>技術工具箱</h2>
+      <div class="tech-icons" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; font-size: 0.9rem;">
+        <span class="tech-tag">#HTML5</span>
+        <span class="tech-tag">#CSS3</span>
+        <span class="tech-tag">#JavaScript</span>
+        <span class="tech-tag">#ChatGPT_API</span>
+        <span class="tech-tag">#Automation</span>
+      </div>
+    </section>
+
+    <!-- 服務項目 -->
+    <section id="services" class="bento-item services bento-col-span-2 bento-row-span-2">
+      <h2>服務項目</h2>
+      <div class="services-list">
+        <div class="inner-card">
+          <h3>網站架設</h3>
+          <p>製作個人頁面、形象網站、服務介紹頁。</p>
+        </div>
+        <div class="inner-card">
+          <h3>資料整理</h3>
+          <p>協助整理 Excel、Google Sheet、文字資料。</p>
+        </div>
+        <div class="inner-card">
+          <h3>文案校對</h3>
+          <p>協助中文、英文文案潤飾與格式整理。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section id="portfolio" class="bento-item portfolio bento-col-span-2 bento-row-span-2">
+      <h2>作品集</h2>
+      <div class="portfolio-list">
+        <div class="inner-portfolio">
+          <img src="images/portfolio-1.jpg" alt="個人接案服務網站截圖">
+          <div class="portfolio-content">
+           <h3>個人接案服務網站 Demo</h3>
+           <p>自主練習作品，用於展示一頁式網站架構、響應式排版與表單介面。</p>
+            <p class="tech">HTML / CSS / JavaScript / Netlify</p>
+            <a href="https://bruce-fixerstudio.netlify.app/" target="_blank" class="portfolio-button">前往查看</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 服務價格 -->
+    <section id="pricing" class="bento-item pricing bento-col-span-4 bento-row-span-1">
+      <h2>服務價格</h2>
+      <div class="pricing-list">
+        <div class="inner-price-card">
+          <h3>基礎版</h3>
+          <p class="price">NT$ 1,500 起</p>
+          <p>適合簡單個人頁、接案介紹頁。</p>
+          <ul>
+            <li>一頁式網站</li>
+            <li>基本排版</li>
+            <li>手機版支援</li>
+          </ul>
+        </div>
+        <div class="inner-price-card highlight">
+          <h3>標準版</h3>
+          <p class="price">NT$ 3,000 起</p>
+          <p>適合小型商家、服務介紹頁。</p>
+          <ul>
+            <li>多區塊首頁</li>
+            <li>圖片與按鈕設計</li>
+            <li>聯絡表單版面</li>
+          </ul>
+        </div>
+        <div class="inner-price-card">
+          <h3>進階版</h3>
+          <p class="price">NT$ 5,000 起</p>
+          <p>適合需要較完整內容規劃的網站。</p>
+          <ul>
+            <li>完整內容架構</li>
+            <li>客製化區塊</li>
+            <li>基本 SEO 結構</li>
+          </ul>
+        </div>
+      </div>
+      <p class="pricing-note">※ 實際價格會依頁面數量、圖片素材、修改次數與功能需求調整。</p>
+    </section>
+
+    <!-- 常見問題 -->
+    <section id="faq" class="bento-item faq bento-col-span-2 bento-row-span-2">
+      <h2>常見問題</h2>
+      <div class="faq-list">
+        <div class="inner-faq-item">
+          <h3>Q：製作一個網站需要多久時間？</h3>
+          <p>一般來說，簡單的個人頁面或一頁式網站大約需要 1-2 週時間，具體取決於資料準備的進度和功能需求。</p>
+        </div>
+        <div class="inner-faq-item">
+          <h3>Q：我需要自己準備圖片和文案嗎？</h3>
+          <p>是的，通常需要由您提供基本的圖片與文字。如果您需要文案潤飾或資料整理，我們也有提供相關服務。</p>
+        </div>
+        <div class="inner-faq-item">
+          <h3>Q：網站上線後可以自己修改內容嗎？</h3>
+          <p>可以的！如果您有自行維護的需求，我們可以評估適合的平台，並提供簡單的教學。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 聯絡表單 -->
+    <section id="contact" class="bento-item contact bento-col-span-2 bento-row-span-2">
+      <h2>聯絡我</h2>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden">
+          <label>不要填這個欄位：<input name="bot-field"></label>
         </p>
-
-        <p>
-          我擅長把複雜需求整理成清楚流程，協助客戶建立基本網頁、
-          服務介紹頁、作品集頁面與簡單的線上表單。
-        </p>
+        <div class="form-group">
+          <label for="name">名字</label>
+          <input type="text" name="name" id="name" placeholder="請輸入你的名字" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="請輸入你的 Email" required>
+        </div>
+        <div class="form-group">
+          <label for="content">需求描述</label>
+          <textarea name="content" id="content" placeholder="請簡單描述你的需求" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">送出表單</button>
+      </form>
+      <div class="contact-info" style="margin-top: 20px;">
+        <p>也可以直接透過以下方式聯絡我：</p>
+        <p>Email：brucefixerstudio@gmail.com</p>
+        <p>LINE：@176byind</p>
       </div>
-    </div>
-  </section>
-
-  <!-- 服務項目 -->
-  <section id="services">
-    <h2>服務項目</h2>
-
-    <div class="services">
-      <div class="card">
-        <h3>網站架設</h3>
-        <p>製作個人頁面、形象網站、服務介紹頁。</p>
-      </div>
-
-      <div class="card">
-        <h3>資料整理</h3>
-        <p>協助整理 Excel、Google Sheet、文字資料。</p>
-      </div>
-
-      <div class="card">
-        <h3>文案校對</h3>
-        <p>協助中文、英文文案潤飾與格式整理。</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 技術工具箱 -->
-  <section id="tech-stack">
-    <h2>技術工具箱</h2>
-    <div class="tech-icons" style="display: flex; justify-content: center; gap: 20px; font-size: 0.9rem;">
-      <span>#HTML5</span>
-      <span>#CSS3</span>
-      <span>#JavaScript</span>
-      <span>#ChatGPT_API</span>
-      <span>#Automation</span>
-    </div>
-  </section>
-
-<!-- 作品集 -->
-<section id="portfolio">
-  <h2>作品集</h2>
-
-  <div class="portfolio">
-    <div class="portfolio-card">
-      <img src="images/portfolio-1.jpg" alt="個人接案服務網站截圖">
-
-      <div class="portfolio-content">
-       <h3>個人接案服務網站 Demo</h3>
-       <p>
-         自主練習作品，用於展示一頁式網站架構、響應式排版與表單介面。
-       </p>
-        <p class="tech">HTML / CSS / JavaScript / Netlify</p>
-
-        <a 
-          href="https://bruce-fixerstudio.netlify.app/" 
-          target="_blank" 
-          class="portfolio-button"
-        >
-          前往查看
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- 服務價格 -->
-<section id="pricing">
-  <h2>服務價格</h2>
-
-  <div class="pricing">
-    <div class="price-card">
-      <h3>基礎版</h3>
-      <p class="price">NT$ 1,500 起</p>
-      <p>適合簡單個人頁、接案介紹頁。</p>
-      <ul>
-        <li>一頁式網站</li>
-        <li>基本排版</li>
-        <li>手機版支援</li>
-      </ul>
-    </div>
-
-    <div class="price-card highlight">
-      <h3>標準版</h3>
-      <p class="price">NT$ 3,000 起</p>
-      <p>適合小型商家、服務介紹頁。</p>
-      <ul>
-        <li>多區塊首頁</li>
-        <li>圖片與按鈕設計</li>
-        <li>聯絡表單版面</li>
-      </ul>
-    </div>
-
-    <div class="price-card">
-      <h3>進階版</h3>
-      <p class="price">NT$ 5,000 起</p>
-      <p>適合需要較完整內容規劃的網站。</p>
-      <ul>
-        <li>完整內容架構</li>
-        <li>客製化區塊</li>
-        <li>基本 SEO 結構</li>
-      </ul>
-    </div>
-    <p class="pricing-note">※ 實際價格會依頁面數量、圖片素材、修改次數與功能需求調整。</p>
-  </div>
-</section>
-
-  <!-- 常見問題 -->
-  <section id="faq">
-    <h2>常見問題</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <h3>Q：製作一個網站需要多久時間？</h3>
-        <p>一般來說，簡單的個人頁面或一頁式網站大約需要 1-2 週時間，具體取決於資料準備的進度和功能需求。</p>
-      </div>
-      <div class="faq-item">
-        <h3>Q：我需要自己準備圖片和文案嗎？</h3>
-        <p>是的，通常需要由您提供基本的圖片與文字。如果您需要文案潤飾或資料整理，我們也有提供相關服務。</p>
-      </div>
-      <div class="faq-item">
-        <h3>Q：網站上線後可以自己修改內容嗎？</h3>
-        <p>可以的！如果您有自行維護的需求，我們可以評估適合的平台，並提供簡單的教學。</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 聯絡表單 -->
-  <section id="contact">
-    <h2>聯絡我</h2>
-  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
-  <input type="hidden" name="form-name" value="contact">
-
-  <p class="hidden">
-    <label>
-      不要填這個欄位：
-      <input name="bot-field">
-    </label>
-  </p>
-
-  <div class="form-group">
-    <label for="name">名字</label>
-    <input type="text" name="name" id="name" placeholder="請輸入你的名字" required>
-  </div>
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email" placeholder="請輸入你的 Email" required>
-  </div>
-  <div class="form-group">
-    <label for="content">需求描述</label>
-    <textarea name="content" id="content" placeholder="請簡單描述你的需求" required></textarea>
-  </div>
-
-  <button type="submit" class="btn btn-dark">送出表單</button>
-</form>
-<p>也可以直接透過以下方式聯絡我：</p>
-<p>Email：brucefixerstudio@gmail.com</p>
-<p>LINE：@176byind</p>
-
-    <div id="formMessage" class="message"></div>
-  </section>
+      <div id="formMessage" class="message"></div>
+    </section>
   </main>
 
   <footer>
