@@ -5,7 +5,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Arial, "Microsoft JhengHei", sans-serif;
+  font-family: 'Noto Sans TC', Arial, "Microsoft JhengHei", sans-serif;
   background-color: #f4f4f4;
   color: #222;
   line-height: 1.6;
@@ -83,13 +83,17 @@ nav a:hover {
 /* Bento Item Base */
 .bento-item {
   background-color: #ffffff;
-  border: 1px solid #eaeaea;
+  border: none;
   border-radius: 20px; /* More rounded for bento style */
-  padding: 30px;
+  padding: 50px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
   display: flex;
   flex-direction: column;
+}
+
+.bento-item:nth-child(even):not(.hero) {
+  background-color: #f9f9f9;
 }
 
 .bento-item:hover {
@@ -196,10 +200,11 @@ nav a:hover {
 }
 
 .inner-card, .inner-faq-item {
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 12px;
-  border: 1px solid #eaeaea;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
 .inner-card h3, .inner-faq-item h3 {
@@ -214,10 +219,11 @@ nav a:hover {
 
 .inner-price-card {
   flex: 1;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   padding: 25px;
   border-radius: 12px;
-  border: 1px solid #eaeaea;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
   display: flex;
   flex-direction: column;
 }
@@ -260,9 +266,10 @@ nav a:hover {
 }
 
 .inner-portfolio {
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   border-radius: 12px;
-  border: 1px solid #eaeaea;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -357,6 +364,10 @@ footer {
   text-align: center;
   padding: 25px;
   color: #666;
+}
+.contact-note {
+  color: #666;
+  margin-bottom: 20px;
 }
 
 /* ===== 手機版與平板版排版 ===== */
