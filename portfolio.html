@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品集｜Bruce Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html">Bruce Studio</a>
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul id="navMenu">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="about.html">關於我</a></li>
+      <li><a href="services.html">服務項目</a></li>
+      <li><a href="portfolio.html" class="active">作品集</a></li>
+      <li><a href="faq.html">常見問題</a></li>
+      <li><a href="contact.html">聯絡我</a></li>
+    </ul>
+  </nav>
+
+  <main class="bento-container">
+    <section class="bento-item bento-col-span-4">
+      <h2>作品介紹</h2>
+      <p>
+        以下作品包含自主練習網站、接案服務展示頁與網站架構練習。
+        目前以 HTML、CSS、JavaScript 靜態網站為主，重點放在版面規劃、響應式設計、表單與部署流程。
+      </p>
+    </section>
+
+    <section class="bento-item bento-col-span-4">
+      <h2>精選作品</h2>
+
+      <div class="portfolio-list featured" style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+        <div class="inner-portfolio portfolio-card">
+          <img src="images/portfolio-1.jpg" alt="Bruce Studio 個人接案服務網站截圖">
+
+          <div class="portfolio-content">
+            <h3>Bruce Studio 個人接案服務網站</h3>
+
+            <p>
+              這是一個自主製作的一頁式接案服務網站，用於展示網站架設、資料整理、
+              AI 工具輔助與聯絡表單功能。網站已完成 GitHub 版本管理與 Netlify 部署流程。
+            </p>
+
+            <div class="project-info" style="margin: 15px 0;">
+              <p><strong>作品類型：</strong>個人接案服務網站 / Demo Project</p>
+              <p><strong>負責項目：</strong>網站架構、HTML、CSS、JavaScript、表單設定、部署</p>
+              <p><strong>使用技術：</strong>HTML / CSS / JavaScript / GitHub / Netlify / Netlify Forms</p>
+              <p><strong>完成內容：</strong>首頁、服務頁、作品集、聯絡表單、成功頁、SEO 與分享預覽</p>
+            </div>
+
+            <div class="portfolio-actions" style="margin-top: auto; display: flex; gap: 10px; flex-wrap: wrap;">
+              <a href="index.html" class="portfolio-button">查看網站首頁</a>
+              <a href="contact.html" class="portfolio-button secondary" style="background-color: #f4f4f4; color: #111;">聯絡我</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bento-item bento-col-span-4">
+      <h2>目前具備的網站製作能力</h2>
+
+      <div class="services-list" style="flex-direction: row; flex-wrap: wrap;">
+        <div class="inner-card card" style="flex: 1; min-width: 250px;">
+          <h3>靜態網站製作</h3>
+          <p>能使用 HTML、CSS、JavaScript 製作一頁式網站與多頁面靜態網站。</p>
+        </div>
+
+        <div class="inner-card card" style="flex: 1; min-width: 250px;">
+          <h3>響應式排版</h3>
+          <p>能製作基本手機版排版，讓網站在電腦與手機上都能正常閱讀。</p>
+        </div>
+
+        <div class="inner-card card" style="flex: 1; min-width: 250px;">
+          <h3>網站部署</h3>
+          <p>能透過 GitHub 與 Netlify 完成網站備份、版本管理與上線部署。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bento-item bento-col-span-4">
+      <h2>後續作品規劃</h2>
+
+      <div class="process">
+        <div class="process-step">
+          <span>01</span>
+          <h3>小型商家形象網站</h3>
+          <p>練習製作店家介紹、營業資訊、服務項目與聯絡方式。</p>
+        </div>
+
+        <div class="process-step">
+          <span>02</span>
+          <h3>個人履歷網站</h3>
+          <p>練習製作個人簡介、技能、經歷、作品與聯絡頁面。</p>
+        </div>
+
+        <div class="process-step">
+          <span>03</span>
+          <h3>資料展示頁</h3>
+          <p>練習把資料整理成清楚的卡片、表格與分類頁面。</p>
+        </div>
+
+        <div class="process-step">
+          <span>04</span>
+          <h3>API 串接作品</h3>
+          <p>後續將練習串接天氣、匯率或公開資料 API。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bento-item bento-col-span-4 cta-section">
+      <h2>想製作類似的網站？</h2>
+      <p>如果你需要個人作品集、服務介紹頁或小型商家形象網站，可以先提供需求方向，我會協助評估。</p>
+      <a href="contact.html" class="btn btn-dark">聯絡我</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Bruce Studio. All rights reserved.</p>
+    <p class="footer-links">
+      <a href="index.html">首頁</a>｜
+      <a href="services.html">服務項目</a>｜
+      <a href="portfolio.html">作品集</a>｜
+      <a href="faq.html">常見問題</a>｜
+      <a href="contact.html">聯絡我</a>
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

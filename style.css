@@ -1,4 +1,10 @@
 /* ===== 全站基礎設定 ===== */
+:root {
+  --color-muted: #888888;
+  --color-card: #ffffff;
+  --radius: 12px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -43,6 +49,16 @@ nav .logo {
   font-size: 20px;
 }
 
+.logo a {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo a:hover {
+  color: #ccc;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -57,6 +73,21 @@ nav a {
 
 nav a:hover {
   color: #ccc;
+}
+nav a.active {
+  background-color: white;
+  color: #111;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
 }
 
 /* ===== Bento Grid Container ===== */
@@ -365,9 +396,69 @@ footer {
   padding: 25px;
   color: #666;
 }
+
+.footer-links {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.footer-links a {
+  color: #666;
+}
+
+.footer-links a:hover {
+  color: #111;
+}
 .contact-note {
   color: #666;
   margin-bottom: 20px;
+}
+
+.note {
+  margin-top: 20px;
+  color: var(--color-muted);
+  font-size: 14px;
+}
+
+.card ul,
+.price-card ul {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.process-step {
+  background-color: var(--color-card);
+  padding: 22px;
+  border-radius: var(--radius);
+}
+
+.process-step span {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: var(--color-muted);
+}
+
+.process-step h3 {
+  margin-top: 0;
+}
+
+.warning-box {
+  background-color: #fff7e6;
+  border-left: 6px solid #ffb020;
+  padding: 20px;
+  border-radius: var(--radius);
+}
+
+.warning-box p {
+  margin: 0;
 }
 
 /* ===== 手機版與平板版排版 ===== */
@@ -384,17 +475,29 @@ footer {
   .inner-price-card.highlight {
     transform: none;
   }
+  .process {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 600px) {
   nav {
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 15px;
   }
+  .menu-toggle {
+    display: block;
+  }
   nav ul {
+    display: none;
+    width: 100%;
     flex-direction: column;
     text-align: center;
-    gap: 10px;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  nav ul.show {
+    display: flex;
   }
   .bento-container {
     grid-template-columns: 1fr;
@@ -412,5 +515,8 @@ footer {
   .about-content {
     flex-direction: column;
     text-align: center;
+  }
+  .process {
+    grid-template-columns: 1fr;
   }
 }
