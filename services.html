@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>服務項目｜Bruce Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html">Bruce Studio</a>
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul id="navMenu">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="about.html">關於我</a></li>
+      <li><a href="services.html" class="active">服務項目</a></li>
+      <li><a href="portfolio.html">作品集</a></li>
+      <li><a href="faq.html">常見問題</a></li>
+      <li><a href="contact.html">聯絡我</a></li>
+    </ul>
+  </nav>
+
+  <main class="bento-container">
+    <section class="bento-item bento-col-span-4">
+      <h2>服務項目</h2>
+
+      <div class="services-list" style="flex-direction: row; flex-wrap: wrap;">
+        <div class="inner-card card" style="flex: 1; min-width: 250px;">
+          <h3>一頁式網站製作</h3>
+          <p>適合個人品牌、接案者、小型商家，用一個頁面清楚介紹服務內容。</p>
+          <ul>
+            <li>首頁主視覺</li>
+            <li>關於我 / 品牌介紹</li>
+            <li>服務項目區塊</li>
+            <li>作品集區塊</li>
+            <li>聯絡表單</li>
+          </ul>
+        </div>
+
+        <div class="inner-card card" style="flex: 1; min-width: 250px;">
+          <h3>作品集網站</h3>
+          <p>適合想展示作品、履歷、服務能力的人，建立可公開分享的個人網站。</p>
+          <ul>
+            <li>作品分類</li>
+            <li>作品說明</li>
+            <li>技術標籤</li>
+            <li>外部連結按鈕</li>
+          </ul>
+        </div>
+
+        <div class="inner-card card" style="flex: 1; min-width: 250px;">
+          <h3>內容整理與 AI 輔助</h3>
+          <p>協助把雜亂的文字、服務說明與想法整理成清楚的網站架構。</p>
+          <ul>
+            <li>網站架構規劃</li>
+            <li>文案初步整理</li>
+            <li>服務項目分類</li>
+            <li>AI 工具輔助流程</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="bento-item bento-col-span-4">
+      <h2>價格方案</h2>
+
+      <div class="pricing-list">
+        <div class="inner-price-card price-card">
+          <h3>基礎版</h3>
+          <p class="price">NT$ 1,500 起</p>
+          <p>適合簡單個人頁、接案介紹頁。</p>
+          <ul>
+            <li>一頁式網站</li>
+            <li>基本排版</li>
+            <li>手機版支援</li>
+            <li>基本聯絡資訊</li>
+          </ul>
+        </div>
+
+        <div class="inner-price-card price-card highlight">
+          <h3>標準版</h3>
+          <p class="price">NT$ 3,000 起</p>
+          <p>適合小型商家、個人品牌、服務介紹頁。</p>
+          <ul>
+            <li>多區塊首頁</li>
+            <li>作品集區塊</li>
+            <li>聯絡表單</li>
+            <li>Netlify 上線</li>
+          </ul>
+        </div>
+
+        <div class="inner-price-card price-card">
+          <h3>進階版</h3>
+          <p class="price">NT$ 5,000 起</p>
+          <p>適合需要完整內容整理與基本 SEO 的網站。</p>
+          <ul>
+            <li>完整內容架構</li>
+            <li>基本 SEO 設定</li>
+            <li>社群分享預覽</li>
+            <li>表單成功頁</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="note">
+        實際價格會依頁面數量、素材準備、修改次數與功能需求調整。
+      </p>
+    </section>
+
+    <section class="bento-item bento-col-span-4">
+      <h2>製作流程</h2>
+
+      <div class="process">
+        <div class="process-step">
+          <span>01</span>
+          <h3>需求確認</h3>
+          <p>先確認網站用途、頁面內容、參考風格與預算範圍。</p>
+        </div>
+
+        <div class="process-step">
+          <span>02</span>
+          <h3>架構規劃</h3>
+          <p>整理首頁、服務項目、作品集與聯絡方式等網站架構。</p>
+        </div>
+
+        <div class="process-step">
+          <span>03</span>
+          <h3>製作與修改</h3>
+          <p>完成初版後進行確認，依約定修改範圍調整內容與版面。</p>
+        </div>
+
+        <div class="process-step">
+          <span>04</span>
+          <h3>上線交付</h3>
+          <p>協助部署網站，提供可公開分享的網址。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bento-item bento-col-span-4">
+      <h2>目前不包含的功能</h2>
+
+      <div class="warning-box">
+        <p>
+          目前服務以靜態網站與一頁式網站為主。若需求包含會員登入、購物車、金流串接、
+          後台管理、資料庫、預約系統或大型系統開發，需要另外評估技術範圍與預算。
+        </p>
+      </div>
+    </section>
+
+    <section class="bento-item bento-col-span-4 cta-section">
+      <h2>想先討論你的網站需求？</h2>
+      <p>可以先提供你的服務內容、參考網站與預算範圍，我會協助初步評估適合的網站形式。</p>
+      <a href="contact.html" class="btn btn-dark">聯絡我</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Bruce Studio. All rights reserved.</p>
+    <p class="footer-links">
+      <a href="index.html">首頁</a>｜
+      <a href="services.html">服務項目</a>｜
+      <a href="portfolio.html">作品集</a>｜
+      <a href="faq.html">常見問題</a>｜
+      <a href="contact.html">聯絡我</a>
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

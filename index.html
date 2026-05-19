@@ -1,72 +1,53 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Bruce Studio｜網站架設與 AI 工作流程輔助</title>
-
   <meta name="description" content="Bruce Studio 提供一頁式網站架設、資料整理、文案校對與 AI 工作流程輔助服務，適合個人品牌、小型商家與接案者。">
-
-  <meta property="og:title" content="Bruce Studio｜網站架設與 AI 工作流程輔助">
-  <meta property="og:description" content="提供一頁式網站架設、資料整理、文案校對與 AI 工具輔助服務。">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://sage-frangollo-83a7bd.netlify.app/">
-  <meta property="og:image" content="https://sage-frangollo-83a7bd.netlify.app/images/portfolio-1.jpg">
-
-  <!-- SEO 優化標籤 -->
-  <meta name="keywords" content="網站架設, 一頁式網站, 資料整理, 文案校對, AI工作流程, Bruce Studio, 接案者網站">
-  <meta name="author" content="Bruce Studio">
-  <link rel="canonical" href="https://sage-frangollo-83a7bd.netlify.app/">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- 導覽列 -->
   <nav>
-    <div class="logo">Bruce Studio</div>
-    <ul>
-      <li><a href="#about">關於我</a></li>
-      <li><a href="#services">服務項目</a></li>
-      <li><a href="#portfolio">作品集</a></li>
-      <li><a href="#pricing">價格</a></li>
-      <li><a href="#faq">常見問題</a></li>
-      <li><a href="#contact">聯絡我</a></li>
+    <div class="logo">
+      <a href="index.html">Bruce Studio</a>
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul id="navMenu">
+      <li><a href="index.html" class="active">首頁</a></li>
+      <li><a href="about.html">關於我</a></li>
+      <li><a href="services.html">服務項目</a></li>
+      <li><a href="portfolio.html">作品集</a></li>
+      <li><a href="faq.html">常見問題</a></li>
+      <li><a href="contact.html">聯絡我</a></li>
     </ul>
   </nav>
 
   <main class="bento-container">
 
-    <!-- 首頁大標題 -->
-    <header id="hero" class="bento-item hero bento-col-span-2 bento-row-span-2">
+    <header class="bento-item hero bento-col-span-2 bento-row-span-2">
       <h1>Bruce Fixer Studio</h1>
       <p>網站架設｜資料整理｜文案校對｜AI 輔助工作流程</p>
-      <a href="#contact" class="btn" style="display: inline-block;">立即聯絡</a>
+      <a href="contact.html" class="btn" style="display: inline-block;">立即聯絡</a>
     </header>
 
-    <!-- 關於我 -->
-    <section id="about" class="bento-item about bento-col-span-2 bento-row-span-1">
+    <section class="bento-item about bento-col-span-2 bento-row-span-1">
       <h2>關於我</h2>
-      <div class="about-content">
-        <div class="photo-box">
-          <img src="images/profile.jpg" alt="Bruce 的照片">
-        </div>
-        <div>
-          <p>我提供簡單網站架設、資料整理、文案校對與 AI 工具輔助服務。服務對象包含個人品牌、小型商家、接案者與剛起步的團隊。</p>
-          <p>我擅長把複雜需求整理成清楚流程，協助客戶建立基本網頁、服務介紹頁、作品集頁面與簡單的線上表單。</p>
-        </div>
-      </div>
+      <p>我提供簡單網站架設、資料整理、文案校對與 AI 工具輔助服務。擅長把複雜需求整理成清楚流程，協助客戶建立基本網頁與線上形象。</p>
+      <a href="about.html" class="btn btn-dark"
+        style="margin-top: 15px; display: inline-block; width: fit-content;">認識更多</a>
     </section>
 
-    <!-- 技術工具箱 -->
-    <section id="tech-stack" class="bento-item tech-stack bento-col-span-2 bento-row-span-1">
+    <section class="bento-item tech-stack bento-col-span-2 bento-row-span-1">
       <h2>技術工具箱</h2>
-      <div class="tech-icons" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; font-size: 0.9rem;">
+      <div class="tech-icons"
+        style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; font-size: 0.9rem;">
         <span class="tech-tag">#HTML5</span>
         <span class="tech-tag">#CSS3</span>
         <span class="tech-tag">#JavaScript</span>
@@ -75,135 +56,33 @@
       </div>
     </section>
 
-    <!-- 服務項目 -->
-    <section id="services" class="bento-item services bento-col-span-2 bento-row-span-2">
+    <section class="bento-item services bento-col-span-2 bento-row-span-1">
       <h2>服務項目</h2>
-      <div class="services-list">
-        <div class="inner-card">
-          <h3>網站架設</h3>
-          <p>製作個人頁面、形象網站、服務介紹頁。</p>
-        </div>
-        <div class="inner-card">
-          <h3>資料整理</h3>
-          <p>協助整理 Excel、Google Sheet、文字資料。</p>
-        </div>
-        <div class="inner-card">
-          <h3>文案校對</h3>
-          <p>協助中文、英文文案潤飾與格式整理。</p>
-        </div>
-      </div>
+      <p>從個人頁面製作、資料結構化整理，到 AI 工作流程導入，為你量身打造數位解決方案。</p>
+      <a href="services.html" class="btn btn-dark"
+        style="margin-top: 15px; display: inline-block; width: fit-content;">查看方案與報價</a>
     </section>
 
-    <!-- 作品集 -->
-    <section id="portfolio" class="bento-item portfolio bento-col-span-2 bento-row-span-2">
-      <h2>作品集</h2>
-      <div class="portfolio-list">
-        <div class="inner-portfolio">
-          <img src="images/portfolio-1.jpg" alt="個人接案服務網站截圖">
-          <div class="portfolio-content">
-           <h3>個人接案服務網站 Demo</h3>
-           <p>自主練習作品，用於展示一頁式網站架構、響應式排版與表單介面。</p>
-            <p class="tech">HTML / CSS / JavaScript / Netlify</p>
-            <a href="https://bruce-fixerstudio.netlify.app/" target="_blank" class="portfolio-button">前往查看</a>
-          </div>
-        </div>
-      </div>
+    <section class="bento-item portfolio bento-col-span-2 bento-row-span-1">
+      <h2>精選作品</h2>
+      <p>個人接案服務網站 Demo、響應式排版與自動化表單介面設計。</p>
+      <a href="portfolio.html" class="btn btn-dark"
+        style="margin-top: 15px; display: inline-block; width: fit-content;">查看作品集</a>
     </section>
 
-    <!-- 服務價格 -->
-    <section id="pricing" class="bento-item pricing bento-col-span-4 bento-row-span-1">
-      <h2>服務價格</h2>
-      <div class="pricing-list">
-        <div class="inner-price-card">
-          <h3>基礎版</h3>
-          <p class="price">NT$ 1,500 起</p>
-          <p>適合簡單個人頁、接案介紹頁。</p>
-          <ul>
-            <li>一頁式網站</li>
-            <li>基本排版</li>
-            <li>手機版支援</li>
-          </ul>
-        </div>
-        <div class="inner-price-card highlight">
-          <h3>標準版</h3>
-          <p class="price">NT$ 3,000 起</p>
-          <p>適合小型商家、服務介紹頁。</p>
-          <ul>
-            <li>多區塊首頁</li>
-            <li>圖片與按鈕設計</li>
-            <li>聯絡表單版面</li>
-          </ul>
-        </div>
-        <div class="inner-price-card">
-          <h3>進階版</h3>
-          <p class="price">NT$ 5,000 起</p>
-          <p>適合需要較完整內容規劃的網站。</p>
-          <ul>
-            <li>完整內容架構</li>
-            <li>客製化區塊</li>
-            <li>基本 SEO 結構</li>
-          </ul>
-        </div>
-      </div>
-      <p class="pricing-note">※ 實際價格會依頁面數量、圖片素材、修改次數與功能需求調整。</p>
-    </section>
-
-    <!-- 常見問題 -->
-    <section id="faq" class="bento-item faq bento-col-span-2 bento-row-span-2">
-      <h2>常見問題</h2>
-      <div class="faq-list">
-        <div class="inner-faq-item">
-          <h3>Q：製作一個網站需要多久時間？</h3>
-          <p>一般來說，簡單的個人頁面或一頁式網站大約需要 1-2 週時間，具體取決於資料準備的進度和功能需求。</p>
-        </div>
-        <div class="inner-faq-item">
-          <h3>Q：我需要自己準備圖片和文案嗎？</h3>
-          <p>是的，通常需要由您提供基本的圖片與文字。如果您需要文案潤飾或資料整理，我們也有提供相關服務。</p>
-        </div>
-        <div class="inner-faq-item">
-          <h3>Q：網站上線後可以自己修改內容嗎？</h3>
-          <p>可以的！如果您有自行維護的需求，我們可以評估適合的平台，並提供簡單的教學。</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 聯絡表單 -->
-    <section id="contact" class="bento-item contact bento-col-span-2 bento-row-span-2">
-      <h2>聯絡我</h2>
-        <p class="contact-note">
-           歡迎透過表單留下需求，我會確認內容後盡快回覆。
-        </p>
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
-        <input type="hidden" name="form-name" value="contact">
-        <p class="hidden">
-          <label>不要填這個欄位：<input name="bot-field"></label>
-        </p>
-        <div class="form-group">
-          <label for="name">名字</label>
-          <input type="text" name="name" id="name" placeholder="請輸入你的名字" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="請輸入你的 Email" required>
-        </div>
-        <div class="form-group">
-          <label for="content">需求描述</label>
-          <textarea name="content" id="content" placeholder="請簡單描述你的需求" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-dark">送出表單</button>
-      </form>
-      <div class="contact-info" style="margin-top: 20px;">
-        <p>也可以直接透過以下方式聯絡我：</p>
-        <p>Email：brucefixerstudio@gmail.com</p>
-        <p>LINE：@176byind</p>
-      </div>
-      <div id="formMessage" class="message"></div>
-    </section>
   </main>
 
   <footer>
-    <p>© 2026 Bruce Studio. Website online.</p>
+    <p>© 2026 Bruce Studio. All rights reserved.</p>
+    <p class="footer-links">
+      <a href="index.html">首頁</a>｜
+      <a href="services.html">服務項目</a>｜
+      <a href="portfolio.html">作品集</a>｜
+      <a href="faq.html">常見問題</a>｜
+      <a href="contact.html">聯絡我</a>
+    </p>
   </footer>
-<script src="script.js"></script>
- </body>
+  <script src="script.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯絡我｜Bruce Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html">Bruce Studio</a>
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul id="navMenu">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="about.html">關於我</a></li>
+      <li><a href="services.html">服務項目</a></li>
+      <li><a href="portfolio.html">作品集</a></li>
+      <li><a href="faq.html">常見問題</a></li>
+      <li><a href="contact.html" class="active">聯絡我</a></li>
+    </ul>
+  </nav>
+
+  <main class="bento-container">
+    <section class="bento-item bento-col-span-4">
+      <h2>聯絡我</h2>
+
+      <p class="contact-note">
+        如果你需要一頁式網站、作品集網站、服務介紹頁或網站內容整理，
+        可以透過下方表單留下需求，我會協助初步評估製作方向。
+      </p>
+
+      <div class="contact-info-box"
+        style="background-color: var(--color-card, #fff); padding: 20px; border-radius: var(--radius, 12px); box-shadow: 0 4px 20px rgba(0,0,0,0.05); margin-top: 20px;">
+        <h3 style="margin-top: 0;">聯絡方式</h3>
+        <p><strong>Email：</strong>brucefixerstudio@gmail.com</p>
+        <p><strong>LINE：</strong>@176byind</p>
+        <p><strong>回覆時間：</strong>通常 24～48 小時內回覆。</p>
+      </div>
+    </section>
+
+    <section class="bento-item bento-col-span-4">
+      <h2>需求表單</h2>
+
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+        <input type="hidden" name="form-name" value="contact">
+
+        <p class="hidden">
+          <label>
+            不要填這個欄位：
+            <input name="bot-field">
+          </label>
+        </p>
+
+        <div class="form-group">
+          <label for="name">姓名 / 稱呼</label>
+          <input type="text" name="name" id="name" placeholder="例如：Bruce" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="example@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="project-type">需求類型</label>
+          <select name="project-type" id="project-type"
+            style="width: 100%; padding: 12px; font-size: 16px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;"
+            required>
+            <option value="">請選擇需求類型</option>
+            <option value="一頁式網站">一頁式網站</option>
+            <option value="作品集網站">作品集網站</option>
+            <option value="小型商家形象頁">小型商家形象頁</option>
+            <option value="網站修改">網站修改</option>
+            <option value="資料整理 / 文案整理">資料整理 / 文案整理</option>
+            <option value="其他">其他</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="budget">預算範圍</label>
+          <select name="budget" id="budget"
+            style="width: 100%; padding: 12px; font-size: 16px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box;">
+            <option value="">可選填</option>
+            <option value="1500-3000">NT$ 1,500～3,000</option>
+            <option value="3000-5000">NT$ 3,000～5,000</option>
+            <option value="5000-8000">NT$ 5,000～8,000</option>
+            <option value="8000以上">NT$ 8,000 以上</option>
+            <option value="尚未確定">尚未確定</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="content">需求說明</label>
+          <textarea name="content" id="content" placeholder="請簡單說明你想做什麼網站、需要哪些頁面、是否有參考網站。" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-dark" style="margin-top: 10px;">送出需求</button>
+      </form>
+    </section>
+
+    <section class="bento-item bento-col-span-4">
+      <h2>填寫前可以先準備</h2>
+
+      <div class="services-list" style="flex-direction: row; flex-wrap: wrap;">
+        <div class="inner-card card" style="flex: 1; min-width: 250px;">
+          <h3>網站用途</h3>
+          <p>例如：個人作品集、商家介紹、接案服務頁、活動頁。</p>
+        </div>
+
+        <div class="inner-card card" style="flex: 1; min-width: 250px;">
+          <h3>參考網站</h3>
+          <p>如果有喜歡的網站風格，可以提供網址或截圖。</p>
+        </div>
+
+        <div class="inner-card card" style="flex: 1; min-width: 250px;">
+          <h3>素材內容</h3>
+          <p>例如：Logo、圖片、服務文字、作品截圖、聯絡方式。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bento-item bento-col-span-4 warning-section">
+      <h2>需求範圍提醒</h2>
+
+      <div class="warning-box">
+        <p>
+          目前主要承接靜態網站、一頁式網站、作品集網站與基礎內容整理。
+          如果需求包含會員登入、購物車、金流、後台管理、資料庫或大型系統，
+          需要另外評估技術範圍與預算。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Bruce Studio. All rights reserved.</p>
+    <p class="footer-links">
+      <a href="index.html">首頁</a>｜
+      <a href="services.html">服務項目</a>｜
+      <a href="portfolio.html">作品集</a>｜
+      <a href="faq.html">常見問題</a>｜
+      <a href="contact.html">聯絡我</a>
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

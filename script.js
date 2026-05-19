@@ -28,3 +28,10 @@
       document.getElementById("email").value = "";
       document.getElementById("content").value = "";
     }
+
+    function toggleMenu() {
+      const navMenu = document.getElementById("navMenu");
+      if (navMenu) {
+        navMenu.classList.toggle("show");
+      }
+    }
